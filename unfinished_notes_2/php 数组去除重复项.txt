@@ -1,0 +1,30 @@
+php 数组去除重复项
+
+
+一维数组
+
+使用函数 array_unique() 即可
+
+array_unique — 移除数组中重复的值
+
+
+
+二维数组
+
+public function assoc_unique($arr, $key)
+	{
+		$tmp_arr = array();
+		foreach($arr as $k => $v) {
+			if(in_array($v[$key], $tmp_arr)) {
+			   unset($arr[$k]);
+			} else {
+			  $tmp_arr[] = $v[$key];
+			}
+		}
+		sort($arr); //sort函数对数组进行排序
+		return $arr;
+	}
+
+
+
+array_intersect — 计算数组的交集

@@ -1,0 +1,40 @@
+一、安装libevent
+下载地址：http://libevent.org/
+下载文件：libevent-2.0.22-stable.tar.gz
+
+tar zxvf libevent-2.0.22-stable.tar.gz
+cd libevent-2.0.22-stable
+./configure
+make 
+make install
+
+ln -s /usr/local/lib/libevent* /lib64/
+
+
+error：
+
+find -name 'libpthread.so'
+/usr/lib/x86_64-linux-gnu/libpthread.so
+
+cp /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/
+
+二、安装FastDFS
+
+下载地址：https://code.google.com/p/fastdfs/
+下载文件：FastDFS_v4.06.tar.gz
+
+tar zxvf FastDFS_v4.06.tar.gz
+cd FastDFS
+./make.sh
+./make.sh install
+
+
+
+
+
+
+三、配置FastDFS
+
+
+
+

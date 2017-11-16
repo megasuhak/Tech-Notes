@@ -1,0 +1,27 @@
+http://ueditor.baidu.com/website/
+
+
+Ueditor 的使用和基本配置
+
+一. UEditor 介绍
+
+UEditor 是由百度「FEX前端研发团队」开发的所见即所得富文本web编辑器，具有轻量，可定制，注重用户体验等特点，开源基于MIT协议，允许自由使用和修改代码。
+
+详细文档
+UEditor 官网：http://ueditor.baidu.com
+
+UEditor API 文档：http://ueditor.baidu.com/doc
+
+UEditor Github 地址：http://github.com/fex-team/ueditor
+
+二. 部署
+
+
+三. 定制工具栏图标
+
+
+四. 前端配置项
+
+
+五. 后端配置项
+

@@ -1,0 +1,264 @@
+
+http://picturecut.tuyoshi.com.br/
+
+Installation
+To test the examples is necessary to extract the folder "picture.cut" for a php environment running on a server
+
+Server Requirements
+
+PHP 5+
+GD extension
+Client-side Requirements
+
+jQuery
+jQuery UI
+UI Core
+Interactions (Draggable, Resizable)
+Widgets (Dialog, Button)
+BootStrap (for bootstrap theme)
+
+How to use it
+include files and dependencies in this order.
+
+        
+              <link rel="stylesheet" href="dependencies/bootstrap-3.2.0/css/bootstrap.min.css"> <!--for bootstrap theme-->    
+ 
+              <script src="dependencies/jquery/jquery-1.11.1.min.js"></script>        
+              <script src="dependencies/bootstrap-3.2.0/js/bootstrap.min.js"></script><!--for bootstrap theme-->    
+              <script src="dependencies/jquery-ui-1.11.1.custom/jquery-ui.min.js"></script>
+              
+              <script src="jquery.picture.cut/src/jquery.picture.cut.js"></script>    
+                  
+
+The plugin must be instantiated in a div, it will work as a container
+
+ 
+              <div id="container_image"></div>        
+                   
+
+Instantiating the plugin, basic mode
+
+ 
+              $("#container_image").PictureCut({
+                  InputOfImageDirectory       : "image",
+                  PluginFolderOnServer        : "/jquery.picture.cut/",
+                  FolderOnServer              : "/uploads/",
+                  EnableCrop                  : true,
+                  CropWindowStyle             : "Bootstrap"
+              });
+                  
+The PluginFolderOnServer and FolderOnServer property need to be defined, they will be better detailed in the next topic, it is important to know that the directory defined in FolderOnServer need to be writable 777.
+
+Parameters
+Extensions
+InputOfImageDirectory
+InputOfImageDirectoryAttr
+InputOfFile
+ActionToSubmitUpload
+ActionToSubmitCrop
+FolderOnServer
+DataPost
+DefaultImageButton
+EnableCrop
+EnableResize
+MinimumWidthToResize
+MinimumWidthToResize
+MinimumHeightToResize
+MaximumSize
+EnableMaximumSize
+PluginFolderOnServer
+CropWindowStyle
+ImageNameRandom
+EnableButton
+ImageButtonCSS
+CropModes
+CropOrientation
+UploadedCallback
+How works the server side
+these implementations are done, all files are included with the plugin.
+
+
+upload
+crop 
+Upload
+
+Server Side implementation upload
+
+src/php/upload.php
+
+    
+ 
+          require_once('core/PictureCut.php');
+ 
+          try {
+            
+            
+            $pictureCut = PictureCut::createSingleton(); //creating an singleton instance of the class PictureCut
+            
+            
+            if($pictureCut->upload()){ //calling the method that will upload    
+              print $pictureCut->toJson(); //print the data to the plugin (client side).
+            } else {    
+              print $pictureCut->exceptionsToJson(); //print exceptions if the upload fails
+            }
+ 
+          } catch (Exception $e) {  
+            print $e->getMessage(); //print exceptions instance.
+          }
+              
+            
+              
+Object submitted to upload.php
+
+          { 
+            [inputOfFile]         : [Files]
+            request               : [String],
+            inputOfFile           : [String],
+            enableResize          : [Boolean],
+            minimumWidthToResize  : [Integer],
+            minimumHeightToResize : [Integer],
+            folderOnServer        : [String],
+            imageNameRandom       : [Boolean],
+            maximumSize           : [Integer],
+            enableMaximumSize     : [Boolean]
+          }
+                
+              
+Object returned to the plugin from upload.php
+
+          {
+              status          : [Boolean],
+              currentFileName : [String],
+              currentWidth    : [Integer],
+              currentHeight   : [Integer],
+              currentFileSize : [Integer],
+              request         : [String]
+          }
+
+          
+
+Crop
+
+Server Side implementation crop
+
+src/php/crop.php
+
+                    
+          require_once('core/PictureCut.php');
+ 
+          try {
+ 
+            $pictureCut = PictureCut::createSingleton();  //creating an singleton instance of the class PictureCut
+            
+            if($pictureCut->crop()){  //calling the method that will cut
+              print $pictureCut->toJson();  //print the data to the plugin (client side).
+            } else {
+               print $pictureCut->exceptionsToJson(); //print exceptions if the upload fails
+            }
+ 
+          } catch (Exception $e) {
+            print $e->getMessage();  //print exceptions instance.
+          }
+ 
+                
+Object submitted to crop.php
+
+          {  
+            currentFileName   : [String],
+            currentWidth      : [Integer],
+            currentHeight     : [Integer],
+            currentFileSize   : [Integer],
+            request           : [String],
+            folderOnServer    : [String],
+            inputOfFile       : [String],
+            maximumSize       : [Integer],
+            enableMaximumSize : [Boolean],
+            toCropImgX        : [Integer],
+            toCropImgY        : [Integer],
+            toCropImgW        : [Integer],
+            toCropImgH        : [Integer]
+          }
+                
+Object returned to the plugin from crop.php
+
+          {
+              status          : [Boolean],
+              currentFileName : [String],
+              currentWidth    : [Integer],
+              currentHeight   : [Integer],
+              currentFileSize : [Integer],
+              request         : [String]
+          }
+
+          
+
+
+
+/* jquery-picture-cut Upload Images Config */
+    'jquery-picture-cut' => array(
+        "imageUrlPrefix"    => "http://115.28.129.52", /* Í¼Æ¬·ÃÎÊÂ·¾¶Ç°×º */
+        
+        "imagePathFormat"   => "/Laputa_admin_demo/webapp/uploads/{yyyy}{mm}{dd}/{time}{rand:6}",
+
+        /* extensions accepted by the plugin */
+        'Extensions'                => "[" . "'png', 'jpg', 'jpeg', 'gif', 'bmp'" . "]",
+        /* */
+        'InputOfImageDirectory'     => '',
+        /* */
+        'InputOfImageDirectoryAttr' => '',
+        /* */
+        'InputOfFile'               => '',
+
+        /* the upload action to be submitted */
+        'ActionToSubmitUpload'      => '',
+
+        /* the crop action to be submitted */
+        'ActionToSubmitCrop'        => '',
+
+        /* the folder that will store the image */
+        'FolderOnServer'            => "/img-server/uploads/",
+
+        /* takes an object to be sent to the upload action */
+        'DataPost'                  => '',
+
+        /* the url to the default image of image button */
+        'DefaultImageButton'        => "/Laputa_admin_demo/webapp/static/lib/jquery-picture-cut/src/img/icon_add_image2.png",
+
+        /* */
+        'EnableCrop'                => '',
+        /* */
+        'EnableResize'              => '',
+        /* */
+        'MinimumWidthToResize'      => '',
+        /* */
+        'MinimumHeightToResize'     => '',
+        /* */
+        'MaximumSize'               => '',
+        /* */
+        'EnableMaximumSize'         => '',
+
+        /* the directory that the plugin is stored */
+        'PluginFolderOnServer'      => "/Laputa_admin_demo/webapp/static/lib/jquery-picture-cut/",
+
+        /* */
+        'CropWindowStyle'           => '',
+
+        /* Activate random file name */
+        'ImageNameRandom'           => TRUE,
+
+        /* */
+        'EnableButton'              => '',
+        
+        /* css attributes to be defined for the image button */
+        'ImageButtonCSS'            => '{
+                                          border : "1px #CCC solid",
+                                          width  : 150,
+                                          height : 150
+                                        }',
+
+        /* */
+        'CropModes'                 => '',
+        /* */
+        'CropOrientation'           => '',
+       
+    ),

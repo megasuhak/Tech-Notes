@@ -1,0 +1,8 @@
+
+
+Linux CURL的安装和使用
+http://blog.csdn.net/lifan5/article/details/7350154
+
+
+为PHP添加GD库支持 
+http://blog.chinaunix.net/uid-14735472-id-111140.html

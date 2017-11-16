@@ -1,0 +1,18 @@
+packages:
+
+SFTP
+
+Linter
+
+Markdown
+
+Emmet
+
+Git
+
+
+
+
+ctrl + shift + p
+
+"ctrl + ," , 就会弹出Settings界面

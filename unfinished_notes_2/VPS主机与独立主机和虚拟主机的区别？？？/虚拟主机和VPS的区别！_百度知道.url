@@ -1,0 +1,9 @@
+[DEFAULT]
+BASEURL=http://zhidao.baidu.com/link?url=fV6yTs5NRVRPkk7CHBxmizGwXrYZAIqiJnSw122o0-dxNb7lrtxDQ9d2cRqsKvCjDSsnoKWzskjyAwS2xV_Wsq
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+URL=http://zhidao.baidu.com/link?url=fV6yTs5NRVRPkk7CHBxmizGwXrYZAIqiJnSw122o0-dxNb7lrtxDQ9d2cRqsKvCjDSsnoKWzskjyAwS2xV_Wsq
+IDList=
+IconFile=http://zhidao.baidu.com/favicon.ico
+IconIndex=1
