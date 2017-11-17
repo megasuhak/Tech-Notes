@@ -5,7 +5,7 @@
 
 ##### 下载
 * 官网：*https://atom.io*
-* 下载文件：*AtomSetup-1.22.0-x64.exe*
+* 下载文件：**AtomSetup-1.22.0-x64.exe**
 
 ##### 官方文档
 * 官方文档：*https://atom.io/docs*
@@ -16,5 +16,5 @@
 * Windows 10 Home
 
 ##### 安装
-* 双击安装文件：*AtomSetup-1.22.0-x64.exe*
+* 双击安装文件：**AtomSetup-1.22.0-x64.exe**
 * 默认安装路径：*C:\Users\xuyixing\AppData\Local\atom*

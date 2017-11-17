@@ -8,7 +8,7 @@
 * 手动下载
 官网地址：*http://lnmp.org*
 下载地址：*http://soft.vpser.net/lnmp/lnmp1.4-full.tar.gz*
-下载文件：*lnmp1.4-full.tar.gz (467MB )*
+下载文件：**lnmp1.4-full.tar.gz (467MB )**
 把文件上传到服务器的 `/opt/` 或 `/home/` 目录下
 
 ##### LNMP一键安装包的安装
