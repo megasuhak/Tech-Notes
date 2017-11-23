@@ -1,5 +1,7 @@
 
-#### Ruby 下载与安装
+#### Ruby on Rails 下载与安装
+
+(以下网址可能需要科学上网)
 
 ##### 下载
 
@@ -24,6 +26,19 @@ ruby 2.2.3……
 
 `yum install ruby`
 
+
+下载 RubyGems
+
+https://rubygems.org/rubygems/rubygems-2.7.2.tgz
+
+tar -zxvf ruby-2.4.2.tgz
+cd rubygems-2.7.2
+ruby setup.rb
+
+
+安装 Rails
+
+gem install rails
 
 ##### 下载
 
