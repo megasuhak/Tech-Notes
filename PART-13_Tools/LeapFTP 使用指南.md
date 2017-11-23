@@ -1,9 +1,13 @@
 #### LeapFTP 使用指南
 
-##### FTP 工具
+##### 下载与运行
 1. 推荐使用 **LeapFTP 3.1.0 绿色版**
 2. 下载地址：*https://pan.baidu.com/s/1eSetnv8*
 3. 解压，运行 **LeapFTP.exe**
+
+##### 操作系统
+* Windows 7 Ultimate with Service Pack 1 (x64)
+* Windows 7 Professional with Service Pack 1 (x64)
 
 ##### FTP登录
 1. 第一次使用，新建站点

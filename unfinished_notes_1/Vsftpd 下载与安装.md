@@ -6,7 +6,10 @@ https://centos.pkgs.org/7/centos-x86_64/vsftpd-3.0.2-22.el7.x86_64.rpm.html
 
 yum install -y vsftpd
 安装版本：vsftpd.x86_64 0:3.0.2-22.el7
+vsftpd: version 3.0.2
 
+CentOS x86_64
+vsftpd-3.0.2-22.el7.x86_64.rpm
 
 2、启动服务
 使用vsftpd软件，主要包括如下几个命令：
