@@ -13,16 +13,16 @@ https://www.ruby-lang.org/en/downloads/
 
 https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.2.tar.gz
 
+https://rubygems.org/
+
 
 tar -zxvf ruby-2.4.2.tar.gz
 cd ruby-2.2.3
 现在，配置并编译源代码，如下所示：
 ./configure
 make && make install
-sudo
-安装后，通过在命令行中输入以下命令来确保一切工作正常：
-$ruby -v
-ruby 2.2.3……
+
+ruby -v
 
 `yum install ruby`
 
@@ -30,6 +30,7 @@ ruby 2.2.3……
 下载 RubyGems
 
 https://rubygems.org/rubygems/rubygems-2.7.2.tgz
+
 
 tar -zxvf ruby-2.4.2.tgz
 cd rubygems-2.7.2
@@ -39,6 +40,8 @@ ruby setup.rb
 安装 Rails
 
 gem install rails
+
+rails -v
 
 ##### 下载
 
@@ -50,7 +53,9 @@ gem install rails
 
 
 ##### Hello World
-`ruby puts "Hello, Ruby!";`
+hello.rb
+puts "hello world from Ruby"
+ruby hello.rb
 
 
 
