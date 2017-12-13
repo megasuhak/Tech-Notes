@@ -16,29 +16,29 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
 地址：[SFTP](https://packagecontrol.io/packages/SFTP)
 安装方法：*ctrl+shift+p* 输入 *Package Control：Install Package* 选择 *SFTP*
 
-3. Emmet
+3. Markdown Preview
+地址：[Markdown Preview](https://packagecontrol.io/packages/Markdown%20Preview)
+安装方法：*ctrl+shift+p* 输入 *Package Control：Install Package* 选择 *Markdown Preview*
+
+4. Emmet
 地址：[Emmet](https://packagecontrol.io/packages/Emmet)
 安装方法：*ctrl+shift+p* 输入 *Package Control：Install Package* 选择 *Emmet*
 
-4. Sublime​Linter
+5. Sublime​Linter
 地址：[Sublime​Linter](https://packagecontrol.io/packages/SublimeLinter)
 安装方法：*ctrl+shift+p* 输入 *Package Control：Install Package* 选择 *Sublime​Linter*
 
-5. Sublime​Linter-php
+6. Sublime​Linter-php
 地址：[Sublime​Linter-php](https://packagecontrol.io/packages/SublimeLinter-php)
 安装方法：*ctrl+shift+p* 输入 *Package Control：Install Package* 选择 *Sublime​Linter-php*
 
-6. Sublime​Linter-csslint
+7. Sublime​Linter-csslint
 地址：[Sublime​Linter-csslint](https://packagecontrol.io/packages/SublimeLinter-csslint)
 安装方法：*ctrl+shift+p* 输入 *Package Control：Install Package* 选择 *Sublime​Linter-csslint*
 
-7. Sublime​Linter-jshint
+8. Sublime​Linter-jshint
 地址：[Sublime​Linter-jshint](https://packagecontrol.io/packages/SublimeLinter-jshint)
 安装方法：*ctrl+shift+p* 输入 *Package Control：Install Package* 选择 *Sublime​Linter-jshint*
-
-8. Markdown Preview
-地址：[Markdown Preview](https://packagecontrol.io/packages/Markdown%20Preview)
-安装方法：*ctrl+shift+p* 输入 *Package Control：Install Package* 选择 *Markdown Preview*
 
 9. Git
 地址：[Git](https://packagecontrol.io/packages/Git)

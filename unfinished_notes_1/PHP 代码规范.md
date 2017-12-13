@@ -75,3 +75,98 @@
 4. 右括号 ) 与开始花括号 { 间 必须 有一个空格。
 5. 结构体主体 必须 要有一次缩进。
 6. 结束花括号 } 必须 在结构体主体后单独成行。
+
+
+
+PHP 标准规范
+https://psr.phphub.org/
+
+
+CodeIgniter 代码规范
+
+一. 文件，Class，Function 命名和注释规范
+
+类：骆驼型，第一个字母大写。Ex：SystemUser
+函数：骆驼型，第一个字母小写。Ex：getSystemUserListByCondition()
+变量：骆驼型，第一个字母小写。
+常量：全大写+下划线连接。
+
+数据库名：下划线连接。Ex：admin_demo
+表名：下划线连接。Ex：system_user
+字段名：下划线连接。如：moblie_phone
+
+
+1. Model 层：SystemUserModel.php
+
+/**
+* System User Model
+*
+* @package     Laputa admin demo
+* @subpackage Model
+* @author      xuyixing <raynorxyx@hotmail.com>
+* @date        2015-1-23
+*/
+class SystemUserModel extends CI_Model
+{
+    public function __construct()
+     {
+          # code...
+     }
+
+    /**
+     *  Get records by condition
+     *
+     *  @param  array $params
+     *  @access  public
+     *  @return  array | false
+     *
+     *  <code>
+     *         ....
+     *  </code>
+     */
+    public function getSystemUserListByCondition($params)     
+     {
+          # code...
+     }
+}
+
+2. Controller层：SystemUser.php
+
+/**
+* System User Controller
+*
+* @package     Laputa admin demo
+* @subpackage Controller
+* @author      xuyixing <raynorxyx@hotmail.com>
+* @date        2015-1-23
+*/
+class SystemUser extends CI_Controller
+{
+     function __construct(){
+          parent::__construct();
+     }
+
+    /*
+     * SystemUser list
+     */
+     public function lists()
+     {
+          # code...
+     }
+}
+
+3. View层：
+SystemUser/list.php
+SystemUser/create.php
+SystemUser/update.php
+SystemUser/view.php
+
+二. svn/git 代码提交注释规范
+
+【修改类型】【概要说明】【完成度%】【提交人】【提交时间】
+
+例：
+【新增】【新增文件index.php，作为网站入口】【100%】【ray】【2011-11-9】
+【修改】【修改bug1002，改掉了****】【100%】【ray】【2011-11-9】
+【删除】【删除多余文件 ***.php】【100%】【ray】【2011-11-9】
+【其他】【移动文件***.php到***文件夹】【100%】【ray】【2011-11-9】
