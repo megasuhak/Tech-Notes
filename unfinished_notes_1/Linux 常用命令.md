@@ -33,6 +33,7 @@ cat /proc/version
 
 history
 
+nc 127.0.0.1 3306
 
 查看已有的iptables规则，以序号显示
 iptables -L -n --line-numbers
