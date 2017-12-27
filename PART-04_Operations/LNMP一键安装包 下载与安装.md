@@ -1,7 +1,7 @@
 
 #### LNMP一键安装包 下载与安装
 
-##### LNMP一键安装包的下载
+##### 下载
 * 使用wget命令下载（推荐）
 `wget -c http://soft.vpser.net/lnmp/lnmp1.4-full.tar.gz`
 
@@ -11,7 +11,7 @@
 下载文件：**lnmp1.4-full.tar.gz (467MB )**
 把文件上传到服务器的 `/opt/` 或 `/home/` 目录下
 
-##### LNMP一键安装包的安装
+##### 安装
 1. STEP-1 解压并安装
 ```
 tar -zxvf lnmp1.4-full.tar.gz
@@ -39,5 +39,5 @@ cd lnmp1.2-full
 并提示安装使用的时间及 Install lnmp V1.4 completed! enjoy it. 说明已经安装成功。
 ![](https://lnmp.org/images/1.4/lnmp1.4-install-success.png)
 
-##### LNMP一键安装包下载安装一键执行
+##### 下载安装一键执行
 `wget -c http://soft.vpser.net/lnmp/lnmp1.4.tar.gz && tar zxf lnmp1.4.tar.gz && cd lnmp1.4 && ./install.sh lnmp`
