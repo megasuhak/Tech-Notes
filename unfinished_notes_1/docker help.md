@@ -165,7 +165,6 @@ docker top :查看容器中运行的进程信息，支持 ps 命令参数。
 run gitlab-ce
 
 sudo docker run --detach \
-    --name gitlab-ce \
     --hostname gitlab.wailianvisa.com \
     --publish 8081:80 \
     --restart unless-stopped \
@@ -174,6 +173,16 @@ sudo docker run --detach \
     --volume /srv/gitlab/data:/var/opt/gitlab \
     gitlab/gitlab-ce:latest
 
+sudo docker run --detach \
+        --hostname gitlab.wailianvisa.com \
+        --publish 8081:80 \
+        --restart unless-stopped \
+        --volume /etc/gitlab/config:/etc/gitlab \
+        --volume /etc/gitlab/logs:/var/log/gitlab \
+        --volume /etc/gitlab/data:/var/opt/gitlab \
+        gitlab/gitlab-ce:latest
+
+```
 docker run -d \
     --name gitlab-ce-zh \
     --hostname gitlab.wailianvisa.com \
@@ -188,12 +197,13 @@ docker run -d \
 docker run -d \
     --name gitlab-ce-zh \
     --hostname gitlab.wailianvisa.com \
-    -p 8080:80 \
+    -p 8081:80 \
     --restart unless-stopped \
     -v gitlab-config:/etc/gitlab \
     -v gitlab-data:/var/opt/gitlab \
     -v gitlab-logs:/var/log/gitlab \
     twang2218/gitlab-ce-zh:10.0
+```
 
 ===========================================
 run nginx
