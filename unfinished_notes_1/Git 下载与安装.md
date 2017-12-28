@@ -22,4 +22,8 @@
 * 默认安装路径：*C:\Users\xuyixing\AppData\Local\atom*
 
 
+Git Bash 基本设置
+Text：Courier New，常规，12pt
+Windows：Columns 150，Rows 50
+
 ##### Linux 下安装与配置
