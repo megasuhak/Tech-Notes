@@ -5,10 +5,10 @@
 1. 在当前目录新建一个Git代码库
 `git init`
 
-2. 
+2.
 git clone https://bitbucket.org/wailiandev/istore.git
 
-3. 
+3.
 
 4.
 
@@ -27,7 +27,15 @@ git status
 
 git log
 
+git config --global user.name xuyixing
+git config --global user.email raynorxyx@hotmail.com
+git config --global user.password passwordGit123456
 
+
+git config --list
+
+
+git clone
 
 ```
 start a working area (see also: git help tutorial)

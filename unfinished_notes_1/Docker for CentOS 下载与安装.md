@@ -14,19 +14,15 @@
 ##### yum 安装
 1. 配置 yum 源
 ```
-sudo yum install -y yum-utils device-mapper-persistent-data lvm2
-sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo  
+yum install -y yum-utils device-mapper-persistent-data lvm2
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo  
 ```
 
 2. yum 安装
-`sudo yum install -y docker-ce`
+`yum install -y docker-ce`
 
 3. docker 启动
-```
-sudo systemctl start docker
-or
-sudo service docker start
-```
+`systemctl start docker`
 
 4. 运行 docker hello world
 ```
