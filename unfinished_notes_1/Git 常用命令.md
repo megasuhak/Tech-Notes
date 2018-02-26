@@ -37,6 +37,11 @@ git config --list
 
 git clone
 
+`强制覆盖本地文件`
+git fetch --all
+git reset --hard
+git pull
+
 ```
 start a working area (see also: git help tutorial)
    clone      Clone a repository into a new directory

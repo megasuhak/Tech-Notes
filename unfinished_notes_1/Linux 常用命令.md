@@ -81,3 +81,6 @@ reload-or-restart NAME
 reload-or-try-restart NAME
 isolate NAME
 kill NAME
+
+====================================================
+mv OLDNAME NEWNAME
