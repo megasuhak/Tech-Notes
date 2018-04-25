@@ -23,4 +23,4 @@
 * PART Ⅻ IDC
 * PART ⅫⅠ 程序人生
 * PART ⅩⅣ 行业资讯
-* PART ⅩⅤ 云计算-大数据
+* My Blog
