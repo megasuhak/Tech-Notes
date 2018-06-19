@@ -37,6 +37,7 @@ cat /etc/issue
 uname -a
 cat /proc/version
 
+查看操作历史
 history
 
 nc 127.0.0.1 3306
