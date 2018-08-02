@@ -20,7 +20,6 @@ server {
 	location ~.*\.php?$ {
 		ssi on;
 		ssi_silent_errors on;
-		ssi_types text/shtml;
 
 		fastcgi_pass  127.0.0.1:9000;
 		fastcgi_index index.php;
