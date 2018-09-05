@@ -185,7 +185,7 @@ sudo docker run --detach \
 ```
 docker run -d \
     --name gitlab-ce-zh \
-    --hostname gitlab.wailianvisa.com \
+    --hostname gitlab.leapoon.com \
     -p 80:80 \
     --restart unless-stopped \
     -v gitlab-config:/etc/gitlab \

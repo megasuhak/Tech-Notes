@@ -14,6 +14,7 @@
 ##### 操作系统
 * CentOS Linux release 7.2
 
+##### 安装
 ```
 wget -c https://nodejs.org/dist/v8.9.1/node-v8.9.1.tar.gz
 
