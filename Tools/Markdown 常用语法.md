@@ -27,8 +27,8 @@
 ```
 无序列表
 * 1
-	- 1.1
-	- 1.2
+	* 1.1
+	* 1.2
 * 2
 	- 2.1
 	- 2.2
@@ -42,10 +42,10 @@
 > 这里是引用
 ```
 
-##### 图片与链接
+##### 链接与图片
 ```
-[简书](http://www.jianshu.com)
-![简书Logo](http://cdn2.jianshu.io/assets/web/logo-58fd04f6f0de908401aa561cda6a0688.png)
+链接：[简书](http://www.jianshu.com)
+图片：![简书Logo](http://cdn2.jianshu.io/assets/web/logo-58fd04f6f0de908401aa561cda6a0688.png)
 ```
 
 ##### 粗体与斜体
@@ -65,20 +65,23 @@
 ```
 
 ##### 代码框
-	单段代码
-	`echo 'hello world';`
+* 单段代码
+`echo 'hello world';`
 
-	多段代码
-	```
-	<?php
-	echo 'hello world';
-	?>
-	```
-	使用 tab 键缩进即可
+* 多段代码
+```
+<?php
+echo 'hello world';
+?>
+```
 
+* 使用 tab 键缩进即可
 
 ##### 分割线
 ```
 ***
 分割线的语法只需要三个 * 号
+
+___
+分割线的语法只需要三个 _ 号
 ```
