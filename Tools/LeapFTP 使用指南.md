@@ -2,7 +2,7 @@
 
 ##### 下载与运行
 1. 推荐使用 **LeapFTP 3.1.0 绿色版**
-2. 下载地址：*https://pan.baidu.com/s/1eSetnv8*
+2. 下载地址：https://pan.baidu.com/s/1eSetnv8
 3. 解压，运行 **LeapFTP.exe**
 
 ##### 操作系统
