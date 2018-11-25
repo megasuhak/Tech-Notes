@@ -12,7 +12,7 @@
 * 官方文档：https://nodejs.org/en/docs/
 
 ##### 操作系统
-* CentOS 7.2
+* CentOS 7.0
 * Ubuntu 16.04
 
 
