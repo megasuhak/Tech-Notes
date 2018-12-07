@@ -5,8 +5,9 @@
 1. 在当前目录新建一个Git代码库
 `git init`
 
-2.
-git clone https://bitbucket.org/wailiandev/istore.git
+##### 签出代码库
+
+git clone https://github.com/xuyixing/my_record.git
 
 3.
 
@@ -15,6 +16,9 @@ git clone https://bitbucket.org/wailiandev/istore.git
 
 ##### 配置
 
+git config --global user.name xuyixing
+git config --global user.email raynorxyx@hotmail.com
+git config --global user.password passwordGit123456
 
 ##### 增加/删除文件
 
@@ -27,9 +31,6 @@ git status
 
 git log
 
-git config --global user.name xuyixing
-git config --global user.email raynorxyx@hotmail.com
-git config --global user.password passwordGit123456
 
 
 git config --list
@@ -41,6 +42,21 @@ git clone
 git fetch --all
 git reset --hard
 git pull
+
+
+
+```
+//查看tag
+git tag  
+
+//在某个commit版本号 上打tag
+git tag Tag_20181207 7c2e57
+
+//本地的tag标签push到代码库
+git push origin 20181207
+
+```
+
 
 ```
 start a working area (see also: git help tutorial)
@@ -73,4 +89,5 @@ collaborate (see also: git help workflows)
    fetch      Download objects and refs from another repository
    pull       Fetch from and integrate with another repository or a local branch
    push       Update remote refs along with associated objects
+
 ```
